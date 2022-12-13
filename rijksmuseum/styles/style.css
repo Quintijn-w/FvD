@@ -1,0 +1,527 @@
+:root {
+  --h1-text-color: white;
+  --h2-text-color: black;
+  --h3-text-color: white;
+  --p-text-color: white;
+
+}
+
+body {
+  margin-right: 0em;
+  margin-left: 0em;
+  display: grid;
+  background-color: #40474f;
+}
+
+/*--------------Nav----------------*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+button:nth-of-type(1) {
+  background-image: url("../images/Icon-menu.svg");
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5em;
+  height: 2em;
+}
+
+button:nth-of-type(2) {
+  background-image: url("../images/Icon-search.svg");
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5em;
+  height: 2.5em;
+  margin-right: auto;
+  margin-left: 1.5em;
+}
+
+
+button:nth-of-type(3) {
+  background-color: #d55140;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.125em;
+  padding: 0 1.2em;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*--------------Header----------------*/
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+  height: 102vh;
+  display: flex;
+}
+
+.topnav section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 8em;
+  background-image: url(/images/neushoorn-kever.jpeg);
+}
+
+.topnav section ul {
+  line-height: 2.5em;
+}
+
+
+.topnav #myLinks {
+  display: none;
+  display: flex;
+}
+
+
+/*--------------fonts----------------*/
+
+h1,
+h2,
+h3,
+p,
+button,
+li {
+  font-family: kanit, Arial, sans-serif;
+}
+
+h1 {
+  color: var(--h1-text-color);
+  font-size: 55px;
+  text-align: center;
+  padding-top: .5em;
+
+
+}
+
+main h2 {
+  display: block;
+  padding: 0.18em 0.2em;
+  border-radius: 0.06em;
+  background: #fff;
+  color: var(--h2-text-color);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 0em;
+
+}
+
+h3 {
+  color: var(--h3-text-color);
+  font-size: 20px;
+  margin-left: 1em;
+  margin-bottom: 0em;
+  margin-top: 10px;
+  font-size: 400;
+}
+
+
+h4 {
+  color: white;
+  font-size: 20px;
+  margin: .4em;
+  font-size: 400;
+}
+
+p {
+  color: var(--p-text-color);
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 2em;
+  margin-top: 5px;
+}
+
+address {
+  color: var(--p-text-color);
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 2em;
+  margin-top: 5px;
+  font-style: normal;
+  font-family: kanit, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  color: white;
+  list-style-type: none;
+  margin: 0em;
+  cursor: pointer;
+}
+
+
+.bezoek h1 {
+  color: var(--h1-text-color);
+  font-size: 55px;
+  text-align: center;
+  padding-top: 8.5em;
+}
+
+/*--------------homepage----------------*/
+
+
+main section:first-child {
+  background-image: linear-gradient(0deg, transparent 50%, rgba(32, 35, 39, .5)), linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/neushoorn-kever.jpeg");
+  display: flex;
+  background-position: center center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin-top: -4.64em;
+  z-index: -1;
+}
+
+main section:nth-of-type(2) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/meid.jpg");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+section:nth-of-type(2):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+/*--------------styling voor animatie----------------*/
+
+@media (orientation: portrait) {
+  main section:nth-of-type(2) {
+    background-size: auto 100vh;
+  }
+
+  section:nth-of-type(2):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+section:nth-of-type(3) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/mensen-tafel.jpeg");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+section:nth-of-type(3):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  main section:nth-of-type(3) {
+    background-size: auto 100vh;
+  }
+
+  section:nth-of-type(3):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+
+section:nth-of-type(4) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/nachtwacht.jpeg");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+section:nth-of-type(4):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  main section:nth-of-type(4) {
+    background-size: auto 100vh;
+  }
+
+  section:nth-of-type(4):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+section:nth-of-type(5) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/pronkkasten.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+section:nth-of-type(5):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  main section:nth-of-type(5) {
+    background-size: auto 100vh;
+  }
+
+  section:nth-of-type(5):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+section:nth-of-type(6) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/mensen-tafel.jpeg");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+section:nth-of-type(6):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  main section:nth-of-type(6) {
+    background-size: auto 100vh;
+  }
+
+  section:nth-of-type(6):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+
+/*--------------Bezoek----------------*/
+
+.bezoek main section:first-child {
+  background-image: linear-gradient(0deg, transparent 50%, rgba(32, 35, 39, .5)), linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/moeder-kind.webp");
+  display: flex;
+  background-position: center center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin-top: -4.64em;
+  z-index: -1;
+}
+
+.bezoek main section:nth-of-type(2) {
+  background-image: none;
+  background-color: #40474f;
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+.bezoek section:nth-of-type(2):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+/*--------------styling voor animatie----------------*/
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(2) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek section:nth-of-type(2):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.bezoek section:nth-of-type(3) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/kinderen.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+  justify-content: flex-end;
+}
+
+.bezoek section:nth-of-type(3):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(3) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek .bezoek section:nth-of-type(3):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+
+.bezoek section:nth-of-type(4) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/nachtwacht-schilderij.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+  justify-content: flex-end;
+}
+
+.bezoek section:nth-of-type(4):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(4) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek section:nth-of-type(4):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.bezoek section:nth-of-type(5) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/zwaan.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+  justify-content: flex-end;
+}
+
+.bezoek section:nth-of-type(5):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(5) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek section:nth-of-type(5):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.bezoek section:nth-of-type(6) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/toer.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+  justify-content: flex-end;
+}
+
+.bezoek section:nth-of-type(6):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(6) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek section:nth-of-type(6):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.bezoek section:nth-of-type(7) {
+  background-image: linear-gradient(180deg, transparent 50%, rgba(32, 35, 39, .5)), url("../images/balie.webp");
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  transition: all 1s ease-in-out;
+  justify-content: flex-end;
+}
+
+.bezoek section:nth-of-type(7):hover {
+  background-size: 110vw;
+  transition: all 1s ease-in-out;
+}
+
+@media (orientation: portrait) {
+  .bezoek main section:nth-of-type(7) {
+    background-size: auto 100vh;
+  }
+
+  .bezoek section:nth-of-type(7):hover {
+    background-size: auto 110vh;
+    transition: all 1s ease-in-out;
+  }
+}
+
+
+
+footer {
+  background-color: #000;
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
